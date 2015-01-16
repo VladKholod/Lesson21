@@ -1,0 +1,314 @@
+body{
+    font: 12px Verdana, sans-serif;
+}
+
+/*wrapper*/
+.wrapper{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 770px;
+}
+/*/wrapper*/
+
+/*header*/
+header{
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 0 0 218px;
+    height: 185px;
+}
+
+    header:before{
+        content: "";
+        position: absolute;
+        background: url(../img/header-face.png) no-repeat;
+        height: 100%;
+        width: 218px;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    
+    header:after{
+        content: "";
+        position: absolute;
+        background: url(../img/bg-header.png) no-repeat;
+        height: 150px;
+        width: 683px;
+        right: 0;
+        bottom: 10px;
+        z-index: 1;
+    }
+/*/header*/
+
+/*nav*/
+nav{
+    margin-left: -42px;
+    padding-top: 7px;
+}
+
+    nav ul{
+        overflow: hidden;
+        list-style: none;
+    }
+
+    nav ul li{
+        display: inline-block;
+        float: right;
+        margin-left: 42px;
+        z-index: 2;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav a:hover{
+        text-decoration: underline;
+    }
+    
+    nav .active a{
+        color: #339933;
+        text-decoration: underline;
+    }
+/*/nav*/
+
+/*main*/
+#main{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+    
+    #main .icon-list {
+        position: relative;
+        float: right;
+        margin-right: 5px; 
+    }
+
+    #main .icon-list ul{
+        list-style: none;
+    }
+
+    #main .icon-list ul li{
+        float: left;
+        display: block;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    #main .icon-list a{
+        background: url("../img/icons-sprite.png") no-repeat;
+        width: 11px;
+        height: 11px;
+        display: block;
+    }
+
+    #main .icon-list .item-1 a{
+        background-position: 0px;
+    }
+
+    #main .icon-list .item-2 a{
+        background-position: -14px;
+    }
+
+    #main .icon-list .item-3 a{
+        background-position: -25px;
+    }
+    
+    #main .icon-list .item-4 a{
+        background-position: -36px;
+    }
+    
+
+    /*sidebar*/
+    .sidebar{
+        -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+        float: left;
+        position: relative;
+        width: 218px;
+        margin: 25px 0px 0px 25px;
+    }
+
+        .sidebar ul.menu{
+            font-size: 11px;
+            font-weight: bold;
+            padding: 0;
+            margin: 0 0 87px;
+            list-style: none;
+            list-style-position: outside;
+        }
+
+        .sidebar ul.menu li{
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .sidebar ul.menu li:before{
+            background: url(../img/sprite.png) no-repeat -16px 0;
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 10px;
+            left: 0;
+            top: 30%;
+        }
+
+        .sidebar ul.menu li a{
+            color: #333;
+            display: block;
+            padding-left: 22px;
+            text-decoration: none;
+        }
+
+
+        .sidebar ul.menu a:hover{
+            text-decoration: underline;
+            color: #339933;
+        }
+
+        .sidebar ul.menu li.active:before,
+        .sidebar ul.menu li:hover:before{
+            background-position: 0 0;
+        }
+
+        .sidebar .menu .active a{
+            text-decoration: underline;
+            color: #339933;
+        }
+
+        
+
+        .sidebar .product-list{
+            list-style: none;
+            margin: 0 0 0 -25px;
+            position: relative;
+        }
+
+        .sidebar .product-list li{
+            background: url(../img/bg-product-list.png) no-repeat;
+            height: 100px;
+            width: 139px;
+            margin-top: 2px;
+            position: relative;
+        }
+
+        .sidebar .product-list a{
+            display: block;
+            height: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .sidebar .product-list li:after{
+            background: url(../img/sprite.png) no-repeat;
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .sidebar .product-list .product-1:after{
+            background-position: 0 -104px;
+            width: 112px;
+	        height: 64px;
+            margin: -32px 0px 0px -67px;
+        }
+
+        .sidebar .product-list .product-2:after{
+            background-position: 0 -195px;
+            width: 88px;
+            height: 99px;
+            margin: -47px 0 0 -55px;
+        }
+
+        .sidebar .product-list .product-3:after{
+            background-position: 0 -305px;
+            width: 90px;
+            height: 85px;
+            margin: -41px 0 0 -53px;
+        }
+    /*/sidebar*/
+
+    /*content*/
+    .content {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: right;
+        overflow: hidden;
+        position: relative;
+        width: 527px;
+        margin-bottom: 25px;
+    }
+
+        .content img{
+            height: auto;
+            width: 190px;
+            display: block;
+            float: left;
+        }
+
+        .content .paragraph{
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        
+        .content .more {
+            color: #339933;
+            float: right;
+            font-weight: bold;
+        }
+    /*/content*/
+/*/main*/
+
+
+/*footer*/    
+footer {
+	background: #000;
+	bottom: 0;
+	color: #fff;
+	left: 0;
+	padding: 6px 0;
+	right: 0;
+}
+    footer .copy {
+        text-align: right;
+        margin: 0;
+    }
+
+/*/footer*/
+
+.container{
+    margin-right: 22px;
+    position: relative;
+}
+
+h3 {
+    color: #339933;
+    padding-bottom: 14px;
+}
+
+.paragraph p{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
